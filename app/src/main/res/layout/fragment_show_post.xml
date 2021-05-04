@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:clickable="true">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="48sp"
+        android:background="@color/haha"
+        android:textColor="@android:color/black"
+        android:paddingStart="15dp"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginTop="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_description"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                tools:ignore="NotSibling">
+                <ImageView
+                    android:id="@+id/iv_show_post_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/iv_music_marker_show_post"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:src="@drawable/music"
+                    android:visibility="invisible"/>
+            </FrameLayout>
+
+
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textColor="@android:color/black"
+            android:autoLink="web"
+            android:paddingStart="5dp"/>
+
+    </ScrollView>
+</RelativeLayout>
