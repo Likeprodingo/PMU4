@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">L4</string>
+    <string name="preview">Image preview</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="select_media">SELECT</string>
+    <string name="create_post">POST</string>
+    <string name="title">Заголовок</string>
+    <string name="description">Описание</string>
+    <string name="remove_media">DELETE</string>
+</resources>
